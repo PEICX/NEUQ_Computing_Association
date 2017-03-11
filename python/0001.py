@@ -1,10 +1,16 @@
-from PIL import Image, ImageDraw, ImageFont
+import random, string
 
-try:
-    im = Image.open('a.jpg')
-    draw = ImageDraw.Draw(im)
-    font = ImageFont.truetype("arial.ttf", 100)  # truetype 为全真字体，格式为ttf
-    draw.text((im.size[0]-120, 0), "99", fill=(255, 0, 0), font=font)  # fill参数可以用RGB颜色模式
-    im.save("test.jpg", "jpeg")  # 保存的格式为jpg，但是在参数里必须写jpeg
-except IOError:                 # 读取文件失败返回这个错误
-    print("读取失败")
+forSelect = string.ascii_letters + "0123456789"
+
+def generate(count, length):
+    # count = 200
+    # length = 20
+
+    for x in range(count):
+        Re = ""
+        for y in range(length):
+            Re += random.choice(forSelect)
+        print(Re)
+
+if __name__ == "__main__":
+    generate(200, 20)

@@ -2,6 +2,10 @@
 
 > Talk is cheap. Show me the code.--Linus Torvalds
 
+**第 0013 题：** 用 Python 写一个爬图片的程序，爬 [这个链接里的日本妹子图片 :-)](http://tieba.baidu.com/p/2166231880)
+
+- [参考代码](http://www.v2ex.com/t/61686 "参考代码")
+
 **0010 ：**使用 Python 生成类似于下图中的**字母验证码图片**
 
 <center>![字母验证码](http://i.imgur.com/aVhbegV.jpg)</center>

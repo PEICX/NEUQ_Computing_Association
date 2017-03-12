@@ -23,10 +23,6 @@ def mk_dir(_path):
         os.mkdir(_path)
 
 
-def download():
-    pass
-
-
 _url = "http://tieba.baidu.com/p/2166231880"
 scrape(_url)
 
